@@ -1,0 +1,321 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+body{
+    margin: 0;
+    padding: 0;
+    overflow-x: hidden;
+
+}
+.nav{
+    cursor: pointer;
+    background-color: yellow;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 8vh;
+    max-width: 100%;
+}
+
+.left{
+    margin-left: 2%;
+}
+
+.right{
+    display: flex;
+    justify-content:center;
+    max-width: 700px;
+
+    gap: 15px;
+    font-family: 'Times New Roman', Times, serif;
+    font-weight: 800;
+    font-size: larger;
+    margin: 10px;
+}
+.right div:hover{
+    color: rgb(255, 0, 0);
+}
+.search input{
+    width: 25rem;
+    height: 1.5rem;
+    border: none;
+    border-radius: 15px;
+    background-color: rgba(41, 210, 52, 0.872);
+}
+.slider-image{
+    width: 300px;
+    height: 250px;
+    margin: 10px;
+    border-radius: 8%;
+    border: 1px solid rgb(168, 155, 79);
+}
+
+.slider{
+    cursor: pointer;
+    position: relative;
+    top: 10px;
+    height: 350px;
+}
+.overflow{
+    color: rgba(0, 38, 255, 0.979);
+    align-items: center;
+    justify-content: center;
+    display: flex;
+    opacity: 1;
+}
+
+.slider-image{
+    box-shadow: 1px 1px 1px 2px rgb(208, 239, 52);
+}
+
+/* ============================================================================ */
+.slider2{
+    position: relative;
+    height: 200px;
+    object-fit: cover;
+}
+
+.overflow2{
+    cursor: pointer;
+    align-items: center;
+    opacity: 1;
+    display: flex;
+    justify-content: center;
+    
+}
+.flex{
+    display: flex;
+    justify-content: space-around;
+}
+
+.btn{
+    margin: 0 60px 0 60px;
+    font-size: larger;
+    font-family: 'Times New Roman', Times, serif;   
+}
+.Single-img{
+    border-radius: 5%;
+    cursor: pointer;
+}
+.link{
+    text-decoration: none;
+}
+
+
+
+/* ======================================================================== */
+
+.main-img{
+    text-align: center;
+    margin: 15px;
+    max-width: calc(20% -20px);
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: yellow;
+    padding: 10px;
+    border-radius: 10px;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+}
+img{
+    box-shadow: 0px 2px 7px rgb(10, 255, 26);
+    width: 20rem;
+    transition: 0.4s ease-in;
+}
+img:hover{
+    transform: scale(1.1);
+}
+
+.ingredient{
+    font-size: 1.5rem;
+    font-family: 'Times New Roman', Times, serif;
+    font-weight: bold;
+}
+
+.instruction{
+    width: 650px;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-weight: 600;
+    font-size: large;
+}
+
+
+
+
+
+
+
+
+
+/* Example media query targeting devices with similar viewport widths */
+
+
+@media (max-width: 400px) {
+
+
+    .right{
+        position: relative;
+        bottom: 60px;
+        margin: 0 auto;
+        display: flex;
+        align-items: center;
+        background-color: rgb(255, 255, 255);
+        width: 400px;
+        text-align: center;
+        
+    }
+
+    .right div{
+        position: relative;
+
+
+    }
+    .left{
+        margin-bottom:30px;
+        font-family: 'Times New Roman', Times, serif;
+        color: rgba(0, 38, 255, 0.979);
+    }
+    .search{
+        position: relative;
+        top: 60px;
+        margin-bottom: 20px;
+    }
+    .search input{
+        height: 31px;
+        text-align: center;
+    }
+    
+    .slider{
+        height: 220px;
+        display: flex;
+        justify-content: center;
+        text-align: center;
+        flex-direction: column;
+        margin-top: 80px;
+    }
+    .overflow{
+        font-size: 10px;
+        display: flex;
+        justify-content: center;
+        font-family: 'Times New Roman', Times, serif;
+        font-weight: bold;
+    }
+    .slider-image{
+        width: 4.5rem;
+        height: 4.5rem;
+    }
+    .form{
+        width: 300px;
+        display: flex;
+        justify-content: center;
+        margin-left: 30px;
+    }
+
+   
+
+
+    /* ======================== */
+
+    .slider2{
+        align-items: center;
+        text-align: center;
+        
+    }
+    
+
+    .slider2 img{
+        height: 5rem;
+        width: 5rem;
+    }
+    .overflow2{
+        font-size: 5px;
+        text-align: center;
+        font-family: 'Times New Roman', Times, serif;
+        font-weight: bold;
+    }
+
+    /* ==============categories================== */
+
+    @media (max-width: 400px) {
+        .card-items {
+            position: relative;
+            top: 100px;
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+
+
+
+        }
+        .main-img{
+            height: 7rem;
+            width: 5rem;
+            background-color: rgb(186, 185, 85);
+        }
+
+        .main-img h5 {
+            position: relative;
+            bottom: 20px;
+            color: rgb(0, 0, 0);
+            font-family: 'Times New Roman', Times, serif;
+            font-weight: bold;
+           
+
+        }
+        .img{
+            width: 6rem;
+            height: 10rem;
+            transition: 0.4s ease-in;
+
+        }
+      }
+}
+
+@media (max-width: 400px) {
+    .recipe-h1{
+        position: relative;
+        top: 110px;
+
+    }
+    .flex{
+        position: relative;
+        top: 130px;
+        display: flex;
+        justify-content: center;
+
+        flex-direction: column;
+        flex-wrap: wrap-reverse;
+        width: 300px;
+        height: auto;
+        gap: 20px;
+
+        margin: 0 auto;
+    }
+
+
+    .main-recipe{
+        max-width: 400px;
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+    }
+    
+
+      .contain{
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+      }
+
+    .instruction{
+        max-width: 320px;
+        margin: 0 auto;
+        align-items: center;
+        text-align: center;
+        top: 10px;
+        position: relative;
+    }  
+
+}
